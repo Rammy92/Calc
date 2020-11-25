@@ -1,18 +1,16 @@
+# assignment 1 python
+
 def addition (x, y):
-    result = x + y
-    return result
+    return x + y
 
 def subtraction (x, y):
-    result = x - y
-    return result
+    return x - y
 
 def multiplication (x, y):
-    result = x * y
-    return result
+    return x * y
 
 def division (x, y):
-    result = x / y
-    return result
+    return x / y
 while True:
 
     x = int(input("Hello! Please inter a number \n "))
@@ -20,40 +18,45 @@ while True:
     y = int(input("Please inter another number \n "))
 
     print("""
-    Inter + for addition
-    Inter - for subtraction 
-    Inter * for multiplication
-    Inter / for division
+    Inter 1 for addition
+    Inter 2 for subtraction 
+    Inter 3 for multiplication
+    Inter 4 for division
     """  
     )
 
     operator = input()
 
-    if operator == "+":
-        print("The result is ", addition(x, y) ,"\n")
+    if operator == "1":
+        result = addition(x, y)
+        print("The result is ", result ,"\n")
+        
         
 
-    elif operator == "-":
-        print("The result is ", subtraction(x, y) ,"\n")
+    if operator == "2":
+        result = subtraction(x, y)
+        print("The result is ", result ,"\n")
         
 
-    elif operator == "*":
-        print("The result is ", multiplication(x, y) ,"\n")
+    if operator == "3":
+        result = multiplication(x, y)
+        print("The result is ", result ,"\n")
         
 
-    elif operator == "/":
-        print("The result is ", division(x, y) ,"\n")
+    if operator == "4":
+        result = division(x, y)
+        print("The result is ", result ,"\n")
 
     if result < 50:
-        print("Less than fifty")
+            print("Less than fifty\n")
     elif result == 50:
-        print("Fifty")
+            print("Fifty\n")
     elif result < 100:   
-        print("Almost a hundred")
+            print("Almost a hundred\n")
     elif result == 100:
-        print("Spot on!")
-      elif result > 100:
-            print("Missed the spot")
+            print("Spot on!")
+    elif result > 100:
+            print("Missed the spot\n")
 
     user_choice = input("Do you want to continue?Y/n\n")
     if user_choice == "Y":
