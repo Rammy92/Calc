@@ -47,7 +47,7 @@ while True:
         result = division(x, y)
         print("The result is ", result ,"\n")
 
-    if result < 50:
+    elif result < 50:
             print("Less than fifty\n")
     elif result == 50:
             print("Fifty\n")
@@ -62,7 +62,7 @@ while True:
     if user_choice == "Y":
         continue
     else:
-        print("Exit")
+        print("Exit!")
         break
 
 
